@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Apex Private Capital | Wealth. Redefined.</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&amp;family=Inter:wght@200;300;400&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#c9a961",
+                        "background-light": "#faf9f6",
+                        "background-dark": "#1a1a1a",
+                        "atelier-dark": "#141414",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "serif": ["Cormorant Garamond", "serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "0px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .hover-underline {
+            position: relative;
+        }
+        .hover-underline::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #c9a961;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .hover-underline:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        .vertical-text {
+            writing-mode: vertical-rl;
+            text-orientation: mixed;
+        }
+    </style>
+</head>
+<body class="bg-background-light text-background-dark font-display font-light selection:bg-primary/30 overflow-x-hidden">
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 px-8 py-8 flex justify-between items-center bg-background-light/80 backdrop-blur-sm border-b border-primary/10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">stat_3</span>
+<h1 class="font-serif text-2xl tracking-[0.2em] uppercase">Apex</h1>
+</div>
+<div class="hidden md:flex gap-12 text-[10px] tracking-[0.3em] uppercase">
+<a class="hover:text-primary transition-colors" href="#manifesto">Manifesto</a>
+<a class="hover:text-primary transition-colors" href="#craftsmanship">Craftsmanship</a>
+<a class="hover:text-primary transition-colors" href="#services">Services</a>
+<a class="hover:text-primary transition-colors" href="#heritage">Heritage</a>
+</div>
+<div>
+<a class="border border-primary px-8 py-3 text-[10px] tracking-[0.3em] uppercase hover:bg-primary hover:text-white transition-all" href="#atelier">Atelier</a>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="h-screen flex flex-col items-center justify-center relative overflow-hidden px-4">
+<div class="absolute inset-0 z-0 opacity-20">
+<img class="w-full h-full object-cover grayscale" data-alt="Luxurious minimalist architectural interior with clean lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtxt0uQKVe_uT1hyN0cae38s-4AgFLgeeZTSvjU5Cwyn4WtKp-7QT1l8Wi0VIGWd4ZyVTfoGxY8AQxxXggne8kFtlz0o7XjUq9PzLysQD7lbg200ecUS2Ihhow-dbw9txi_TW8ncFOBVdi6x_k2uyWyejv88fcnv-VoRGNADZdzpPTuIFJFH-CDH39yuZcRUJr9OkvKqHBuqkBxg0-G5fB0pmB11wYfYaL3DVZhHU2_H87SyEuE_h_E8W9LqTALDHu9SOHhKoYekg"/>
+</div>
+<div class="relative z-10 text-center space-y-8">
+<p class="text-[12px] tracking-[0.5em] uppercase text-primary mb-4">Institutional Excellence</p>
+<h1 class="font-serif text-6xl md:text-9xl tracking-tight leading-none text-background-dark">
+                Wealth. <span class="italic">Redefined.</span>
+</h1>
+<p class="font-serif text-xl md:text-2xl text-background-dark/60 max-w-2xl mx-auto italic">
+                Experience the quiet elegance of bespoke capital management.
+            </p>
+</div>
+<div class="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-40">
+<span class="text-[10px] tracking-[0.4em] uppercase">Scroll</span>
+<div class="w-px h-16 bg-primary"></div>
+</div>
+</section>
+<!-- Manifesto Section -->
+<section class="py-32 md:py-64 bg-background-light flex flex-col items-center px-6" id="manifesto">
+<div class="max-w-[600px] text-center relative">
+<span class="font-serif text-8xl text-primary absolute -top-16 -left-12 opacity-30 select-none">“</span>
+<h2 class="font-serif text-3xl md:text-5xl leading-relaxed mb-12">
+                Our philosophy is built upon the preservation of legacy through meticulous craftsmanship and unwavering discretion.
+            </h2>
+<p class="text-sm md:text-base leading-loose text-background-dark/70 tracking-wide uppercase italic">
+                A manifesto of private capital.
+            </p>
+<span class="font-serif text-8xl text-primary absolute -bottom-24 -right-12 opacity-30 select-none">”</span>
+</div>
+</section>
+<!-- Craftsmanship Section -->
+<section class="py-32 px-8 md:px-32 max-w-[1440px] mx-auto" id="craftsmanship">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+<div class="md:col-span-7 space-y-12">
+<div class="aspect-[4/5] w-full bg-background-dark overflow-hidden">
+<img class="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-1000" data-alt="Macro texture of flowing liquid gold ripples" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGlr9HWPRu5dm_EipHT_KO9ZTOqkTbu18GukX6hv3ZL-bKJ6zBbEPRLPZhh5XZK-2NsOUM1SFepNtam3INOw3Jy1fRhTTiV6sn4Z-FPf9HfYmDyBqxqAvKDZ8dJYJc6EY29RwPZQWZcitcgGRXbCP4cs4Yp2iVc2jFDPOu30KnQnz5fvNO5UMiPKzd6lNGAEz8AXgH5p3Q69709jXhxS7JG_Z34gVX8k7s_yFbnbUa4-4BGt3KLmnV-8xnBCWa03_rc70SZnJD7co"/>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="font-serif text-4xl">The Art of Preservation</h3>
+<p class="text-background-dark/60 max-w-md leading-relaxed">
+                        Every strategy is hand-woven with the same attention to detail as a bespoke garment, ensuring your legacy is protected through generations of shifting tides.
+                    </p>
+<a class="text-[10px] tracking-[0.4em] uppercase text-primary hover-underline inline-block w-fit mt-4" href="#">Discover More</a>
+</div>
+</div>
+<div class="md:col-span-5 space-y-12 md:pt-48">
+<div class="flex flex-col gap-4 mb-8">
+<h3 class="font-serif text-4xl">Silk &amp; Steel</h3>
+<p class="text-background-dark/60 leading-relaxed">
+                        A delicate balance of sophisticated risk management and the fluid grace of opportunities captured in real-time.
+                    </p>
+<a class="text-[10px] tracking-[0.4em] uppercase text-primary hover-underline inline-block w-fit mt-4" href="#">The Atelier Process</a>
+</div>
+<div class="aspect-[3/4] w-full bg-background-dark overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-80 hover:scale-105 transition-transform duration-1000" data-alt="Flowing silk texture in monochromatic gray tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmFlehDnlT2_LwjQ4eyfod71w7q4raJcBQQ7_aVmAmUJ5MTqXnOWg7YrHvBfjMRbeQ6_P4liXJUj_CCBC2m0veD7chjsqk3VPLXDkm3s_13uvNwc6INHOANLj2h3HFxOsSBJSGVSPx_8gSC6wA6JfNxmVhBoeluhEvN44UZwEBMah5q3D5l5OpIn0H40USnsGc3OK2tPLXuyE40iLFoTZAECxnQn2SThuZR1TS5ENnQiHOB6FkLtSNfm3Rxcm1Dzu4geElkoBvB9w"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 md:py-64 px-4 bg-background-light" id="services">
+<div class="text-center mb-24">
+<p class="text-[10px] tracking-[0.6em] uppercase text-primary mb-4">Core Disciplines</p>
+<h2 class="font-serif text-5xl">The Portfolio</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 px-4">
+<div class="group relative aspect-[3/4] overflow-hidden bg-background-dark">
+<img class="w-full h-full object-cover opacity-50 grayscale group-hover:scale-110 transition-transform duration-1000" data-alt="Modern geometric skyscraper facade with clean lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANr9Kinz8J_ovMAMJboR9styGrELLylcGq10lrCuIqPCdkyfn03YXTbswcRUmwE0PhFD1zZesVJLgGs80Rgd-y5jalXkVli5pdVVYPa5_arXn-zxZUD4C4BSLsrBamF_bRbmZ1SmJU7pbjk4MPHKlzkfqBrh250q0vBjbOL55qcGKm8NaWo19dBDsW1IrI4eNVg1DP3yCqN9jv09EUs2F5BeF3cj-KnFvcuv0f3ZCQXdQn5UqYXXsTcsZrfO3pg0B2I3BCqG-DKPw"/>
+<div class="absolute inset-0 flex flex-col justify-end p-8 text-white">
+<p class="text-[10px] tracking-[0.3em] uppercase mb-2">01</p>
+<h4 class="font-serif text-2xl">Capital Strategy</h4>
+</div>
+</div>
+<div class="group relative aspect-[3/4] overflow-hidden bg-background-dark">
+<img class="w-full h-full object-cover opacity-50 grayscale group-hover:scale-110 transition-transform duration-1000" data-alt="Abstract minimalist architectural curves" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdRz3MGOwxW7eupKNlJNEx5ZRxninbqUu4NcfTV854hsnnBnLv0yBNpabmXLxbZw8PJm_P4ugjOsBW8Wz8TD54xC23yBJHO5vtjd_aMlaiI6wke2TeXWAgQegjz6atNmizF5hHvikkLfhajIXhsMxAEaXN1SOKTrKtm7xYNzAyK91lj3XfS6Baochn8Dqm74R7ZgwUBSWGnqdT5JJgcxrDLBz2W4qPe0PJFrsn-YlwVfR4rDynxJgN4tL3gWzTPbsWPnAs0zmtd8I"/>
+<div class="absolute inset-0 flex flex-col justify-end p-8 text-white">
+<p class="text-[10px] tracking-[0.3em] uppercase mb-2">02</p>
+<h4 class="font-serif text-2xl">Legacy Trust</h4>
+</div>
+</div>
+<div class="group relative aspect-[3/4] overflow-hidden bg-background-dark">
+<img class="w-full h-full object-cover opacity-50 grayscale group-hover:scale-110 transition-transform duration-1000" data-alt="Global connectivity abstract lights at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAyLgQ5s-L8XVvMIFtWsUDyyqL9bqtEOKqqaQXTTCDUEYhs5vwLusxQqbKQ_XwrZ50XeWmPZz674C9iFDnrxxc5iMsmYoqWD0BR8QAZD_yVnZO5a_rx5Yu5wK0YZTi8vuXx3t2-OmgnP78C1oiD_MDNtLTMsf8cwVAxqT7Ax-GGY2psnyfdTm4umGu861TVvmu1pC8QMjbCnlTUgstgtVBiaOUc0aIIosCbeqECjUne41BHHOziev7llwGGZL1b5ls-Pa_nafTp9M"/>
+<div class="absolute inset-0 flex flex-col justify-end p-8 text-white">
+<p class="text-[10px] tracking-[0.3em] uppercase mb-2">03</p>
+<h4 class="font-serif text-2xl">Global Arbitrage</h4>
+</div>
+</div>
+<div class="group relative aspect-[3/4] overflow-hidden bg-background-dark">
+<img class="w-full h-full object-cover opacity-50 grayscale group-hover:scale-110 transition-transform duration-1000" data-alt="Hand-stitched leather detail of a luxury briefcase" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAONFFCRZHSt_tJd2NoxvhEVvba0YxcVQQuBQTRmvONhWjsTgfD-X0CPbQh4JFyRKi0EKmghHzahcfaSjX4gOFwoZHwMLEcwdw1VH5cw8tnzzwmQUUDf4H4RYz6oWM0WliBHbRiNCF8IIM4CgzCzSsj1p_hRApD1ZWYsvEIsiHKpQX08mvVDt_SlqXstz6dQSjUDQ0gheict0xq6IKQBv3DzGlDSvp-5YG0xoGad8rdXDIeXB5gBBpNMs0NTnqCvG5ZTuQR0mz2f5Q"/>
+<div class="absolute inset-0 flex flex-col justify-end p-8 text-white">
+<p class="text-[10px] tracking-[0.3em] uppercase mb-2">04</p>
+<h4 class="font-serif text-2xl">Private Equity</h4>
+</div>
+</div>
+</div>
+</section>
+<!-- Heritage Section -->
+<section class="py-32 md:py-64 bg-background-light flex flex-col items-center" id="heritage">
+<div class="max-w-[800px] w-full px-8 relative">
+<div class="absolute left-1/2 top-0 bottom-0 w-px bg-primary/20 hidden md:block"></div>
+<div class="flex flex-col md:flex-row items-center justify-between mb-32 relative">
+<div class="md:w-5/12 text-center md:text-right">
+<span class="font-serif text-primary text-4xl italic">1924</span>
+<h4 class="text-[10px] tracking-[0.4em] uppercase mt-2 mb-4">Foundation</h4>
+<p class="text-sm text-background-dark/60 leading-relaxed">The inception of the Apex creed in Geneva, serving Europe's most influential families.</p>
+</div>
+<div class="w-4 h-4 bg-primary rotate-45 absolute left-1/2 -translate-x-1/2 hidden md:block"></div>
+<div class="md:w-5/12"></div>
+</div>
+<div class="flex flex-col md:flex-row-reverse items-center justify-between mb-32 relative">
+<div class="md:w-5/12 text-center md:text-left">
+<span class="font-serif text-primary text-4xl italic">1978</span>
+<h4 class="text-[10px] tracking-[0.4em] uppercase mt-2 mb-4">Expansion</h4>
+<p class="text-sm text-background-dark/60 leading-relaxed">Pioneering algorithmic wealth models while maintaining the human touch of personal stewardship.</p>
+</div>
+<div class="w-4 h-4 bg-primary rotate-45 absolute left-1/2 -translate-x-1/2 hidden md:block"></div>
+<div class="md:w-5/12"></div>
+</div>
+<div class="flex flex-col md:flex-row items-center justify-between relative">
+<div class="md:w-5/12 text-center md:text-right">
+<span class="font-serif text-primary text-4xl italic">2024</span>
+<h4 class="text-[10px] tracking-[0.4em] uppercase mt-2 mb-4">Modern Era</h4>
+<p class="text-sm text-background-dark/60 leading-relaxed">Redefining institutional boundaries through a global network of specialized capital partners.</p>
+</div>
+<div class="w-4 h-4 bg-primary rotate-45 absolute left-1/2 -translate-x-1/2 hidden md:block"></div>
+<div class="md:w-5/12"></div>
+</div>
+</div>
+</section>
+<!-- Atelier Section -->
+<section class="py-32 md:py-64 bg-atelier-dark text-white px-8" id="atelier">
+<div class="max-w-[800px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-24">
+<div class="space-y-8">
+<p class="text-[10px] tracking-[0.6em] uppercase text-primary">Inquiry</p>
+<h2 class="font-serif text-6xl">Atelier</h2>
+<p class="text-white/60 leading-relaxed font-light">
+                    Participation is strictly limited to ensure the highest level of tailored service. Please provide your information to begin the vetting process.
+                </p>
+<div class="pt-12 border-t border-white/10 space-y-4">
+<p class="text-[10px] tracking-[0.4em] uppercase opacity-40">Contact HQ</p>
+<p class="font-serif text-xl">+44 20 7946 0000</p>
+<p class="font-serif text-xl">concierge@apexprivate.com</p>
+</div>
+</div>
+<div class="space-y-12">
+<form class="space-y-12">
+<div class="space-y-4">
+<label class="text-[10px] tracking-[0.4em] uppercase opacity-40">Full Legal Name</label>
+<input class="w-full bg-transparent border-0 border-b border-white/20 px-0 py-2 focus:ring-0 focus:border-primary transition-colors text-xl font-serif" type="text"/>
+</div>
+<div class="space-y-4">
+<label class="text-[10px] tracking-[0.4em] uppercase opacity-40">Direct Communication</label>
+<input class="w-full bg-transparent border-0 border-b border-white/20 px-0 py-2 focus:ring-0 focus:border-primary transition-colors text-xl font-serif" type="email"/>
+</div>
+<div class="space-y-4">
+<label class="text-[10px] tracking-[0.4em] uppercase opacity-40">Capital Interests</label>
+<select class="w-full bg-transparent border-0 border-b border-white/20 px-0 py-2 focus:ring-0 focus:border-primary transition-colors text-xl font-serif appearance-none">
+<option class="bg-atelier-dark">Multi-Generational Wealth</option>
+<option class="bg-atelier-dark">Institutional Management</option>
+<option class="bg-atelier-dark">Private Equity Acquisition</option>
+</select>
+</div>
+<button class="group flex items-center gap-6 text-[10px] tracking-[0.5em] uppercase text-primary pt-8" type="submit">
+<span>Request Consultation</span>
+<span class="material-symbols-outlined text-sm group-hover:translate-x-2 transition-transform">arrow_forward</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-atelier-dark text-white/30 py-16 px-8 border-t border-white/5">
+<div class="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary/50 text-2xl">stat_3</span>
+<span class="font-serif text-xl tracking-[0.2em] uppercase text-white/50">Apex</span>
+</div>
+<div class="flex gap-12 text-[10px] tracking-[0.3em] uppercase">
+<a class="hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-primary transition-colors" href="#">Global Compliance</a>
+</div>
+<p class="text-[10px] tracking-[0.3em] uppercase">© 2024 Apex Private Capital. London | Geneva | Singapore</p>
+</div>
+</footer>
+</body></html>
